@@ -12,4 +12,19 @@
  */
 export function classifyAge(age: number): string {
     // 請在此處寫下你的程式碼
+    if (age < 0) {
+        return 'Age should not be negative';
+    }
+    else if (age <= 12) {
+        return 'Child';
+    }
+    else if (age <= 17) {
+        return 'Teenager';
+    }
+    else if (age <= 64) {
+        return 'Adult';
+    }
+    else {
+        return "Senior";
+    }
 }
